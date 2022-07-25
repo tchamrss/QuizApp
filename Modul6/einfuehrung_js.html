@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="headline">Programmieren</h1>
+
+    <button onclick="joke1()" id="challenge">Witz 1</button>
+    <button onclick="joke2()" id="challenge">Witz 2</button>
+    <a onclick="joke3()" href="#"> Witz 3</a>
+    <p id="joke"> ich freue mich sehr auf javascript</p>
+
+
+    <script>
+        function joke1(){
+            document.getElementById('joke').innerHTML='Cooler Witz';
+        }
+        function joke2(){
+            document.getElementById('joke').innerHTML='ich freue mich sehr auf javascript';
+        }
+        function joke3(){
+            document.getElementById('joke').innerHTML= `
+            <b>Hallo Welt</b>
+            <br>
+            Ich probiere mal... bin gespannt
+            
+            
+            `;
+        }
+        function favoriteAnimal(){
+            document.getElementById('challenge').innerHTML='Giraffe';
+
+        }
+    </script>
+</body>
+</html>

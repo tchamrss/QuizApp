@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: center;
+            
+
+        }
+
+        .picture{
+
+            margin: 10px;
+            cursor: pointer;
+            
+            
+        }
+
+        .picture img{
+           height: 150px;
+           object-fit: cover;
+        }
+
+        .picture:hover{
+            opacity: 0.8;
+        }
+        .showImg{
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+
+        }
+        .showImg img{
+            height: 100vh;
+            width: 100%;
+            object-fit: contain;
+        }
+
+        .close{
+            cursor: pointer;
+        }
+
+       
+    </style>
+    
+    <script>
+        let images =['img/IMG_3810.jpeg','img/IMG_3815.jpeg','img/IMG_3929.jpeg','img/IMG_3998.jpeg','img/IMG_3999.jpeg','img/IMG_4001.jpeg','img/IMG_4561.jpeg','img/IMG_4562.jpeg','img/IMG_4563.jpeg','img/IMG_4565.jpeg','img/IMG_4580.jpeg','img/IMG_4585.jpeg'];
+        
+            
+        function insertImg() {
+            let content = document.getElementById('body');
+            content.innerHTML = ``;
+            
+            for(let i =0; i < images.length; i++){
+                content.innerHTML += /*html*/ `
+                 
+                    <div class="picture">
+                        <img src="${images[i]}" onclick="showImage(${i})">
+                    </div>
+                
+                `;
+
+                
+            }
+
+        }
+
+        function showImage(i){
+            let content = document.getElementById('body');
+            content.innerHTML = ``;
+            content.classList.remove('picture');
+            content.classList.add('showImg');
+            content.innerHTML = `
+            <div>
+                <img src="${images[i]}">  
+                <button onclick="closeImg()" class="close">Close</button>  
+            </div>
+            `;
+
+        }
+
+        function closeImg(){
+            let content = document.getElementById('body');
+            content.innerHTML = ``;
+            content.classList.remove('showImg');
+            content.classList.add('picture');
+            
+            insertImg();
+        }
+
+        function checkEnterKey(){
+            var input = document.getElementById("body");
+            input.addEventListener("keydown", function(event) {
+        if (event.code == 'Enter') {
+            
+            closeImg();
+            
+        }
+        });
+        }
+
+    </script>
+</head>
+<body onload="insertImg()" id="body" onkeydown="checkEnterKey()">
+    
+    
+</body>
+</html>

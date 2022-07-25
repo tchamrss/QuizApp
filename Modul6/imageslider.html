@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliderexample</title>
+
+    <style>
+        body{
+            margin: 0%;
+            background-color: gray;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slider-container{
+            position: relative;
+            width: 600px;
+            height: 300px;
+            background-color: white;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            overflow: hidden;
+
+        
+            
+        }
+
+      /*   .slider-container img{
+            
+            width: 300px;
+            height: 150px;
+            object-fit: contain;
+            
+        } */
+        .slider-imgage{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: relative;
+            
+            transition: transform 225ms ease-in-out;
+
+        }
+
+    </style>
+
+    <script>
+        function startSlider(){
+            setTimeout(function(){
+                document.getElementById('im1').style = `transform: translationX(-100%)`;
+            },3000);
+        }
+    </script>
+</head>
+<body onload="startSlider()">
+    <div class="slider-container">
+        <img id="im1" class="slider-imgage" src="r1.jpeg" style="transform: translateX(0);" >
+        <img id="im2" class="slider-imgage" src="r2.jpg" style="transform: translateX(100%);">
+        <img id="im3" class="slider-imgage" src="r3.jpg" style="transform: translateX(200%);">
+
+    </div>
+</body>
+</html>

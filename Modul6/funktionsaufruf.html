@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    </style>
+
+    <script>
+
+        function calc(){
+            let number = +document.getElementById('input').value;
+            let resultText = `the result of ${number}^2 is ${powerOf2(number)}`;
+            console.log('Result is', resultText);
+            alert(getresulttext(number,powerOf2(number)));
+
+        }
+
+        function powerOf2(x){
+            return x*x;
+
+        }
+        function getresulttext(number, result){
+            return `the result result of ${number}^2 is ${powerOf2(number)} `;
+            
+        }
+
+    </script>
+</head>
+<body>
+    <input  id="input">
+    <button onclick="calc()">Calc</button>
+    
+</body>
+</html>

@@ -1,0 +1,843 @@
+
+<html>
+
+  <head>
+
+    <script type="text/javascript" id="cookieinfo"
+      src="//cookieinfoscript.com/js/cookieinfo.min.js">
+    </script> 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <title> Sakura-Ramen</title>
+    <meta charset="UTF-8">
+
+    <style>
+
+      body{
+        Margin:0px;
+      }
+      Html{
+       Scroll-behavior: smooth;
+      }
+
+      .BgrdCont1{
+        background-image: url('img/bgr1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        flex-direction: column; 
+        background-position: bottom;
+
+      }
+
+      .BgrdCont1 h1{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 4vw;
+
+      }
+
+      .BgrdCont1 span{
+        font-family: 'Raleway', sans-serif;
+      
+
+      }
+
+      .BgrdCont2{
+        display: flex; 
+        justify-content: space-around; 
+        align-items: center;
+        flex-direction: column; 
+              
+        background-color: white;
+        /* height: 40vh; */
+        padding-bottom: 50px;
+
+      }
+
+      .BgrdCont2-child{
+        display: flex; 
+
+        Width:80%;
+        /* height: 30%; */
+        /* background-color:blue; */
+        justify-content: space-between;
+        align-items: flex-end;     
+
+      }
+
+      .BgrdCont2-child span{
+        font-family: 'Economica', sans-serif;
+        font-weight:bold;
+        font-size: 2vw;
+      }
+      .BgrdCont2 h1{
+        font-family: 'Economica', sans-serif;
+        /* font-weight: 700; */
+        font-size: 6vw;
+      }
+
+      .BgrdCont2-child1{
+        display: flex; 
+        /* background-color:blue; */
+        /* justify-content: flex-start; */
+        align-items:center;
+        flex-direction: column;
+
+      }
+
+    
+
+      .BgrdCont2-child2{
+        display: flex; 
+        /* justify-content: space-between; */
+        align-items:center;
+        flex-direction: column;
+
+      }
+
+      .BgrdCont2-child3{
+        display: flex; 
+        /* justify-content: space-between; */
+        align-items:center;
+        flex-direction: column;
+
+      }
+
+   
+
+      .BgrdCont3{
+        background-image: url('img/background.jpg');
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+        /* height: 100vh; */
+        display: flex;
+        padding-left: 60px;
+        padding-right: 60px;
+        justify-content: space-between;  
+        flex-direction: column;
+        padding-bottom: 60px;
+        
+
+      }
+      .BgrdCont3 td{
+        height: 30px;
+        width: 150px;
+        
+      }
+
+      .BgrdCont3  span{
+        font-family: 'Economica', sans-serif; 
+        font-weight: 700;
+        font-size: 3vw;
+
+      }
+      .BgrdCont3  h1{
+        font-family: 'Economica', sans-serif; 
+        /* font-weight: 700; */
+        font-size: 6vw;
+
+      }
+
+      .BgrdCont3  p{
+        /* margin-right: 120px; */
+        
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        color: gray;
+
+      }
+
+
+      .BgrdCont3-header{
+        display: flex;
+        justify-content: space-evenly; 
+        align-items: center;
+
+      }
+
+      .BgrdCont3-child1{
+        display: flex;
+        justify-content: space-around; 
+        align-items: center;
+        /* background-color: red; */
+        
+      }
+      
+    
+
+      .BgrdCont3-child2{
+        display: flex;
+        justify-content: space-evenly; 
+        align-items: center;
+        /* background-color: blue; */
+        /* flex-direction: row-reverse; */
+        
+      }
+      
+
+      .BgrdCont3-child3{
+        display: flex;
+        justify-content: space-around; 
+        align-items: center;
+        /* background-color: green; */
+        
+        
+      }
+
+      
+
+
+      .BgrdCont4{
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+      }
+
+      .BgrdCont4 h1{
+        color: red; 
+        font-family: 'Raleway', sans-serif;
+
+      }
+
+      .BgrdCont4 span{
+         
+        font-family: 'Raleway', sans-serif;
+
+      }
+
+      .BgrdCont4 img{
+        position:relative;
+        left: -160px;
+        top: 100px;
+        width: 20px;
+        height: 20px; 
+        object-fit: contain;     
+
+      }
+
+      .BgrdCont5 iframe{
+        width: 100%;
+
+      }
+
+      .footer{
+
+        Padding:20px;       
+        padding-left: 60px;
+        padding-right: 60px;
+        Display:flex;
+        Justify-content:space-between;
+        align-items: center;
+
+      }
+
+
+      .footer-child2{
+        display: flex; 
+
+        Width:30%;
+        align-items: center;
+        background-color:white;
+        justify-content: space-between;
+
+
+      }
+
+      
+
+      .menu{
+        position: absolute;
+        Top: 40px;
+        Left: 80px;
+        Right:80px;
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        /* Background-color:blue; */
+        
+      }
+      .menu a {
+
+        color:white;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        text-decoration: none;
+        margin-right: 50px;
+      }
+      .menu a:hover {
+
+        text-decoration:underline;
+        color:red;
+      }
+
+      .menu-child2 img{
+        
+        width: 22px;
+        height: 22px; 
+        margin-right: 8px;
+        
+      }
+
+      .menu-child2 span{
+        color:white;        
+        font-family: 'Raleway', sans-serif;
+        
+      }
+
+     
+
+      .menu-child2{
+        display: flex;
+        padding-left: 10px;
+        padding-right: 10px;
+        align-items: center;
+        background-color:red;
+        border-style: solid;
+        border-color: white;
+        
+        
+      }
+
+      .menu-child1{
+        display: flex; 
+        width: 60%;
+        justify-content: flex-end;
+        
+        /* background-color:green; */
+        
+      }
+
+      .translator{
+        display: flex;
+        
+      }
+
+      .translator a{
+        display: contents;
+        /* text-align: center;
+        width: 0; */
+      }
+
+      @media(max-width:865px){
+        .translator{
+        display: none;
+        
+      }
+
+      }
+
+      @media(max-width:800px){
+
+        .BgrdCont1 h1{
+        font-size: 36px;
+
+        }
+
+        .BgrdCont1 span{
+        font-size: 18px;
+
+        }
+
+        .menu {
+          position: absolute;
+          /* Top: 40px;
+          Left: 40px;
+          Right: 40px; */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        
+        }
+
+        .menu img{
+          
+        margin-right: 32px;
+        }
+        .menu-child2 img {
+          margin-right: 0 !important;
+         
+        }
+
+
+        .menu-child2 {
+            display: flex;
+            align-items: center;
+            background-color: red;
+            margin-left: 32px;
+            border-style: solid;
+            border-color: white;
+        }
+
+
+        .menu-child1 {
+          display: none;
+          
+        }
+
+        .BgrdCont2 h1 {
+          font-family: 'Economica', sans-serif;
+          /* font-weight: 700; */
+          font-size: 40px;
+        }
+
+        .BgrdCont2-child {
+          display: flex;
+          /* Width: 80%; */
+          /* height: 30%; */
+          /* background-color: blue; */
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+
+        .BgrdCont2-child span{
+          font-size: 28px;
+        }
+
+        .BgrdCont2-child1 {
+          display: flex;
+          /* background-color: blue; */
+          /* justify-content: flex-start; */
+          align-items: center;
+          flex-direction: column;
+          padding-bottom: 65px;
+        }
+        .BgrdCont2-child2 {
+          display: flex;
+          /* background-color: blue; */
+          /* justify-content: flex-start; */
+          align-items: center;
+          flex-direction: column;
+          padding-bottom: 65px;
+        }
+        .BgrdCont2-child3 {
+          display: flex;
+          /* background-color: blue; */
+          /* justify-content: flex-start; */
+          align-items: center;
+          flex-direction: column;
+          padding-bottom: 65px;
+        }
+
+        .footer {
+          Padding: 20px;
+          padding-left: 60px;
+          padding-right: 60px;
+          Display: flex;
+          Justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+
+        .footer-child1 img{
+          width: 300px;
+          
+        }
+
+
+        .footer-child2 {
+            display: flex;
+            /* Width: 30%; */
+            align-items: center;
+            background-color: white;
+            justify-content: center;
+        }
+
+        .footer-child2 img{
+          width: 73px;
+            margin-right: 5px;
+        }
+
+        .BgrdCont3 {
+          background-image: url(img/background.jpg);         
+          background-size: cover;
+          display: flex;         
+          flex-direction: column;
+          padding-bottom: 60px;
+        }
+
+        .BgrdCont3 img{
+          width: 300px;
+
+        }
+        .ourmenu{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+
+        .ourmenu span{
+          font-size: 32px;
+        }
+        .ourmenu table{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+
+        .ourmenu tbody{
+          display:flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+          max-width: 300px;
+          align-content: space-between;
+
+        }
+
+        .ourmenu tr{
+          max-width: 300px;
+          display: flex;
+          justify-content: space-between;
+
+        }
+        .ourmenu td{
+          /* max-width:150px; */
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          /* text-align: end; */
+          /* width: 300px; */
+          
+
+        }
+        .price {
+          text-align: end;
+        }
+        
+
+        .BgrdCont3-child1 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            /* background-color: red; */
+        }
+
+        .BgrdCont3-child2 {
+          display: flex;
+          /* justify-content: space-evenly; */
+          align-items: center;
+          /* background-color: blue; */
+          flex-direction: column-reverse;
+        }
+
+        .BgrdCont3-child3 {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          /* background-color: green; */
+          flex-direction: column;
+        }
+
+        .BgrdCont3 h1 {
+          font-family: 'Economica', sans-serif;
+          /* font-weight: 700; */
+          font-size: 40px;
+        }
+        /* .translator{
+        display: none;
+        
+      } */
+
+      /* .translator a{
+        text-align: center;
+      } */
+
+      }
+
+
+    </style>
+
+  </head>
+
+  <body>
+
+
+    <div class ="BgrdCont1">
+      
+
+      
+        <div >
+          <h1 style="color:white">SAKURA RAMEN</h1>
+          
+        </div>
+        <span style="color:white" id="headline">THE BEST RAMEN IN THE TOWN</span>
+        
+    </div>
+
+
+    <div class ="BgrdCont2">
+      <div>
+        <h1 style="color:red" id="wiemanbestellt">HOW TO ORDER</h1>
+      </div>
+      
+      <div class ="BgrdCont2-child">
+        <div class ="BgrdCont2-child1">
+        
+          <div >
+            <img src="img/bowl_icon.jpg"/>
+            
+          </div>
+          <span><br>Pick</span>
+          <span>Your Noodle</span>
+          
+        </div> 
+        <div class ="BgrdCont2-child2">
+        
+          <div >
+            <img src="img/broth_icon.png"/>
+            
+          </div>
+          <span><br>Pick </span>
+          <span>Your Broth</span>
+          
+        </div> 
+        <div class ="BgrdCont2-child3">
+        
+          <div >
+            <img src="img/eggs_icon.jpg"/>
+            
+          </div>
+          <span><br>Add Your</span>
+          <span>Toppings</span>
+          
+        </div> 
+
+      </div>
+
+    </div>
+
+    <div class ="BgrdCont3" id="Menu">
+      <div class ="BgrdCont3-header">
+        <h1 style="color:red" id="unsermenu">OUR MENU</h1>
+      </div>
+      <div class ="BgrdCont3-child1">
+        <img src="img/r1.png"/>
+      
+        <div class="ourmenu">
+          <span>Tonkasu Ramen</span>
+          <table>
+            
+            <tr>
+              <td>
+                <p id="haehnchen1">CHICKEN</p>
+              </td>
+              <td class="price">
+                <p>11.95€</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p id="rindfleisch1">BEEF</p>
+              </td>
+              <td>
+                <p class="price">12.95€</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p id="garnelen1">SCHRIMP</p>
+              </td>
+              <td>
+                <p class="price">13.95€</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class ="BgrdCont3-child2">
+        <div class="ourmenu">
+          <span>Spicy Miso Ramen</span>
+          <table>
+            
+            <tr>
+              <td>
+                <p id="haehnchen2">CHICKEN</p>
+              </td>
+              <td>
+                <p class="price">11.95€</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p id="rindfleisch2">BEEF</p>
+              </td>
+              <td>
+                <p class="price">12.95€</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p id="garnelen2">SCHRIMP</p>
+              </td>
+              <td>
+                <p class="price">13.95€</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <img src="img/r2.png"/>
+      </div>
+      <div class ="BgrdCont3-child3">
+        <img src="img/r3.png"/>
+      
+        <div class="ourmenu">
+          <span>Shio Ramen</span>
+          <table>
+            
+            <tr>
+              <td>
+                <p id="haehnchen3">CHICKEN</p>
+              </td>
+              <td>
+                <p class="price">11.95€</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p id="rindfleisch3">BEEF</p>
+              </td>
+              <td>
+                <p class="price">12.95€</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p id="garnelen3">SCHRIMP</p>
+              </td>
+              <td>
+                <p class="price">13.95€</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div> 
+
+      
+    <div class="BgrdCont4">
+        <img src="img/LO.png"/>
+        <div>
+          <h1 id="findensieunsunter">FIND US AT</h1>
+        </div>
+        
+        <span>Kapuzinerstraße 31, München, BY 80337</span><br>
+    </div> 
+      
+    
+    <div class="BgrdCont5" id="Location">
+    
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.2079671826364!2d11.559009251502932!3d48.125512659877664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479ddf44d01affc5%3A0xe7a07e0710be63e8!2sKapuzinerstra%C3%9Fe%2031%2C%2080337%20M%C3%BCnchen!5e0!3m2!1sde!2sde!4v1655413008542!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+        <br>
+    </div>
+
+
+    <div class="footer" id="About">
+
+        <div class="footer-child1">
+          <img src="img/saklogo.png"/>
+          <!-- <div >
+            <h2 style="color:red">SAKURA RAMEN</h2>
+            
+          </div> -->
+                    
+        </div>
+  
+        <div class="footer-child2">
+          <img src="img/fb.png"/>
+          <img src="img/ins.png"/>
+          <img src="img/tripad.png"/>
+  
+        </div>
+  
+  
+    </div>
+
+
+    <div class="menu">
+      <img src="img/saku.png"/>
+      <div class="menu-child1">
+
+        <a href="#Menu" id="menu">MENU</a> 
+        <a href="#Location" id="standort">LOCATIONS</a>
+        <a href="#About" id="ueberuns">ABOUT</a>
+      </div>
+      <div class="menu-child2">
+        <img src="img/phone.png"/>
+
+        <span href="tel:+49 (0) 17641136453">017654564534</span>
+      </div>
+      <div class="translator">
+        <a onclick="translationDE()" href="#">DE/</a>
+        <a onclick="translationEN()" href="#">EN</a>
+      </div>
+        
+ 
+    </div>
+
+    <script>
+      function translationDE(){
+        document.getElementById('headline').innerHTML = 'DAS BESTE RESTAURANT IN DER STADT';
+        document.getElementById('menu').innerHTML = 'MENÜ';
+        document.getElementById('ueberuns').innerHTML = 'ÜBER';
+        document.getElementById('standort').innerHTML = 'STANDORT';
+        document.getElementById('findensieunsunter').innerHTML = 'FINDEN SIE UNS UNTER';
+        document.getElementById('wiemanbestellt').innerHTML = 'WIE MAN BESTELLT';
+        document.getElementById('unsermenu').innerHTML = 'UNSER MENÜ';
+        
+        document.getElementById('haehnchen1').innerHTML = 'HÄHNCHEN';
+        document.getElementById('rindfleisch1').innerHTML = 'RINDFLEISCH';
+        document.getElementById('garnelen1').innerHTML = 'GARNELEN';
+
+        document.getElementById('haehnchen2').innerHTML = 'HÄHNCHEN';
+        document.getElementById('rindfleisch2').innerHTML = 'RINDFLEISCH';
+        document.getElementById('garnelen2').innerHTML = 'GARNELEN';
+
+        document.getElementById('haehnchen3').innerHTML = 'HÄHNCHEN';
+        document.getElementById('rindfleisch3').innerHTML = 'RINDFLEISCH';
+        document.getElementById('garnelen3').innerHTML = 'GARNELEN';
+      }
+      function translationEN(){
+        document.getElementById('headline').innerHTML = 'THE BEST RAMEN IN THE TOWN';
+        document.getElementById('menu').innerHTML = 'MENU';
+        document.getElementById('ueberuns').innerHTML = 'ABOUT';
+        document.getElementById('standort').innerHTML = 'LOCATION';
+        document.getElementById('findensieunsunter').innerHTML = 'FIND US AT';
+        document.getElementById('wiemanbestellt').innerHTML = 'HOW TO ORDER';
+        document.getElementById('unsermenu').innerHTML = 'OUR MENU';
+
+        document.getElementById('haehnchen1').innerHTML = 'CHICKEN';
+        document.getElementById('rindfleisch1').innerHTML = 'BEEF';
+        document.getElementById('garnelen1').innerHTML = 'SCHRIMP';
+
+        document.getElementById('haehnchen2').innerHTML = 'CHICKEN';
+        document.getElementById('rindfleisch2').innerHTML = 'BEEF';
+        document.getElementById('garnelen2').innerHTML = 'SCHRIMP';
+
+        document.getElementById('haehnchen3').innerHTML = 'CHICKEN';
+        document.getElementById('rindfleisch3').innerHTML = 'BEEF';
+        document.getElementById('garnelen3').innerHTML = 'SCHRIMP';
+      }
+    </script>
+   
+  </body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let todos = ['Einkaufen','Putzen','Kochen', 'Spazieren', 'Sport'];
+        function showTodos(){
+            document.getElementById('myList').innerHTML= ``;
+            for(let i=0; i<todos.length; i++){
+                document.getElementById('myList').innerHTML += `<li>${todos[i]} <a href="#" onclick = "deleteTodo(${i})"> X </a> </li>`;
+            }
+            
+        
+        }
+
+        function addtodo(){
+            let todo = document.getElementById('myInput').value;
+            todos.push(todo);
+            showTodos();
+            document.getElementById('myInput').value = ``;
+        }
+
+        function deleteTodo(position){
+            todos.splice(position,1)
+            showTodos();
+        }
+    </script>
+</head>
+<body onload="showTodos()">
+    <ul id="myList">
+   
+<!--         <li>Todo</li>
+        <li>Todo</li>
+        <li>Todo</li>
+        <li>Todo</li> -->
+    </ul>
+
+    <input type="text" id="myInput">
+    <button onclick="addtodo()">add</button>
+</body>
+</html>

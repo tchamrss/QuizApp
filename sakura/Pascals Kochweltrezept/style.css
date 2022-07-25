@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.overflowX {
+    overflow-x: hidden;
+}
+
+.topHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0px;
+    box-shadow: 0px 0px 5px;
+    margin-bottom: 32px;
+}
+
+.topHeaderFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70vw;
+}
+
+.topHeader a {
+    padding: 0 16px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 4px solid transparent;
+    transition: all 225ms ease-in-out;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.topHeader a:hover {
+    color: rgb(0, 128, 0);
+    border-bottom: 4px solid rgb(0, 128, 0);
+    transition: all 225ms ease-in-out;
+}
+
+.logoDesign {
+    width: 250px;
+}
+
+.bodyHeader {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bodyHeaderH1 {
+    width: 70vw;
+}
+
+.mainImageDesign {
+    width: 70vw;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.infoHeader {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    width: 70vw;
+}
+
+.infoHeaderBorder {
+    display: flex;
+    align-items: center;
+    background-color: lightgray;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.infoHeaderBorder img,
+.preparationBorder img {
+    padding-right: 12px;
+}
+
+.clockDesign {
+    width: 15px;
+}
+
+.brainDesign {
+    width: 15px;
+}
+
+.calendarDesign {
+    width: 14px;
+}
+
+.inputLine {
+    border-top: 1px solid lightgray;
+    margin-top: 32px;
+    padding: 16px;
+    display: flex;
+    width: 70vw;
+}
+
+.inputLine span {
+    margin-top: 4px;
+    font-size: 20px;
+    margin-right: 12px;
+}
+
+input::placeholder {
+    font-size: 20px;
+}
+
+input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    border-radius: 10px;
+    width: 4vw;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 12px;
+}
+
+.inputLine button {
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(0, 128, 0);
+    color: white;
+    font-weight: bold;
+    transition: all 225ms ease-in-out;
+}
+
+.inputLine button:hover {
+    transition: all 225ms ease-in-out;
+    background-color: rgba(0, 128, 0, 0.8);
+}
+
+.footTable {
+    width: 70vw;
+}
+
+.footTableDesignOne {
+    padding: 16px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.footTableDesignTwo {
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.preparationDesign {
+    margin-top: 32px;
+    width: 70vw;
+}
+
+.preparationTime {
+    display: flex;
+    align-items: center;
+    width: 70vw;
+}
+
+.preparationBorder {
+    display: flex;
+    align-items: center;
+    background-color: lightgray;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.marginLeft {
+    margin-left: 32px;
+}
+
+.preparationText {
+    margin-top: 24px;
+    width: 70vw;
+    font-size: 18px;
+}
+
+.credits {
+    width: 70vw;
+}
+
+.creditsProfil {
+    display: flex;
+    align-items: center;
+    width: 70vw;
+    margin-bottom: 32px;
+}
+
+.creditsProfil img {
+    width: 50px;
+    border-radius: 100%;
+}
+
+.creditName {
+    margin-left: 12px;
+    font-size: 20px;
+}
+
+.transform {
+    transform: translateY(0px) !important;
+    transition: all 225ms ease-in-out;
+}
+
+#menuResponsive {
+    width: 30px;
+    cursor: pointer;
+}
+
+#xMarkDesign {
+    position: absolute;
+    right: 5%;
+    top: 15px;
+    width: 20px;
+    cursor: pointer;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    #navMenu {
+        padding: 32px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        transform: translateY(-250px);
+        transition: all 225ms ease-in-out;
+        background-color: white;
+        width: 100%;
+        height: 46px;
+    }
+
+    .topHeader {
+        position: fixed;
+        right: 0;
+        left: 0;
+        z-index: 1;
+        background-color: white;
+    }
+
+    .bodyHeaderH1 {
+        margin-top: 110px;
+    }
+
+    .infoHeader {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .infoHeaderBorder, .preparationBorder {
+        margin: 8px 0 !important;
+    }
+
+    .inputLine {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .preparationTime {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1005px) {
+    #menuResponsive, #xMarkDesign {
+        display: none;
+    }
+
+    .topHeaderFlex {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 913px) {
+    #menuResponsive, #xMarkDesign {
+        display: none;
+    }
+
+}
+
+@media (min-width: 0px) and (max-width: 414px) {
+    .logoDesign {
+        width: 150px;
+    }
+
+    #menuResponsive {
+        width: 20px;
+        cursor: pointer;
+    }
+
+    .inputLine span {
+        font-size: 17px;
+    }
+}

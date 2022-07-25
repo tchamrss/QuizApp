@@ -1,0 +1,27 @@
+.footer {
+    height: 250px;
+    text-decoration: none;
+    background-color: #666;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 0;
+    transition: all 75ms ease-in-out;
+    border-bottom: 1px solid transparent;
+}
+
+
+
+.footer a {
+    margin-left: 8px;
+    margin-right: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer a:hover {
+    font-weight: bold;
+    transition: all 75ms ease-in-out;
+    border-bottom: 1px solid white;
+}

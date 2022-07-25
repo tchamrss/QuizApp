@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        
+        body{
+            margin: 0;
+        }
+        img{
+            width: 100%;
+        }
+
+        .animate{
+            animation: 1s  fadeIn ease-in-out;
+
+
+        }
+
+        @keyframes fadeIn {
+            from{
+                opacity: 0;
+                font-size: 0;
+            }
+            to{
+                opacity: 1;
+                font-size: 32px;
+            }
+            
+        }
+    </style>
+    <script>
+        let images = ['r1.jpeg','r2.jpg','r3.jpg'];
+        let i = 0;
+        let currentImage = 0;
+
+        /* function image1(){
+            document.getElementById('ima1').src=images[i];
+            i++;
+            setTimeout(image2,2000);
+        }
+
+        function image2(){
+            document.getElementById('ima1').src=images[i];
+            setTimeout(image3,2000);
+            i++;
+        }
+        function image3(){
+            document.getElementById('ima1').src=images[i];
+            setTimeout(image1,2000);
+            i = 0;
+        } */
+        function start(){
+            let milliseconds = +document.getElementById('inputfield').value *1000;
+            if (milliseconds > 6000){
+                alert('bitte kleinere Zahl eingeben');
+            }else{
+                if (milliseconds < 1000){
+                    alert('bitte mindestens eine SeKunde');
+
+                }else{
+                    showImage(currentImage);
+                    currentImage++;
+                    setTimeout(start,milliseconds);
+                    if(currentImage == 3){
+                        currentImage=0;
+
+                    }
+                }
+            }
+        }
+
+        function showImage(i){
+            document.getElementById('ima1').src= images[i];
+            document.getElementById('animation').classList.add('animate');
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="inputfield" placeholder="wie viele Sekunden?">
+    <button onclick="start()">starte</button>
+    <!-- <button onclick="showImage(0)">1</button> 
+    <button onclick="showImage(1)">2</button>
+    <button onclick="showImage(2)">3</button>  -->
+    <img id="ima1" src="r1.jpeg">
+
+    <h1 id="animation" class="animate"> animation </h1>
+</body>
+</html>

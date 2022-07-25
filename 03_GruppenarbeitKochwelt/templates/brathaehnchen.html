@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brathähnchen</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="..//style_pascal.css">
+    <script src="../script.js"></script>
+</head>
+<body onload="includeHTML()">
+    <div w3-include-html="../templates/header.html"></div>
+    
+    <div class="bodyHeader">
+        <div class="bodyHeaderH1">
+            <h1><b>Brathähnchen, knusprig</b></h1>
+        </div>
+        <div>
+            <img class="mainImageDesign" src="../img/bratHae.jpg" alt="">
+        </div>
+        <div class="infoHeader">
+            <div class="infoHeaderBorder ">
+                <img class="clockDesign" src="../img/icons/clock-regular.svg" alt="">
+                <span>15 Min</span>
+            </div>
+            <div class="infoHeaderBorder marginLeft">
+                <img class="brainDesign" src="../img/icons/brain-solid.svg" alt="">
+                <span>simpel</span>
+            </div>
+            <div class="infoHeaderBorder marginLeft">
+                <img src="../img/icons/calendar-alt-regular.svg" class="calendarDesign" onload="dateCurrent()"> 
+                <div id="dateCur" class="dateCalc"></div>
+                
+            </div>
+        </div>
+        <!-- Bottom Body -->
+        <div class="inputLine">
+            <span>Zutaten für</span>
+            <input type="number" placeholder="3" id="inputField" min="1">
+            <button onclick="portionCalc()">Portionen</button>
+        </div>
+        <!-- FootTable -->
+        <div class="footTable">
+            <div class="footTableDesignOne">
+                <span id="salatGurke">1 Hähnchen</span>
+            </div>
+            <div class="footTableDesignTwo">
+                <span id="paprikaschote">80g Magarine</span>
+            </div>
+            <div class="footTableDesignOne">
+                <span id="tomaten">4 EL Paprikapulver</span>
+            </div>
+            
+            <div class="footTableDesignTwo">
+                <span>Salz und Pfeffer</span>
+            </div>
+            <div class="footTableDesignOne">
+                <span>evtl. Chilipulver</span>
+            </div>
+        </div>
+        <!-- Preparation -->
+        <div class="preparationDesign">
+            <h1>Zubereitung</h1>
+        </div>
+        <div class="preparationTime">
+            <div class="preparationBorder">
+                <img class="clockDesign" src="../img/icons/clock-regular.svg" alt="">
+                <span>ca. 15 Minuten</span>
+            </div>
+            <div class="preparationBorder marginLeft">
+                <img class="clockDesign" src="../img/icons/clock-regular.svg" alt="">
+                <span>Gesamtzeit ca. 15 Minuten</span>
+            </div>
+        </div>
+        <div class="preparationText">
+            <span>Hähncheninnereien, falls vorhanden, rausnehmen, dann das Hähnchen waschen und trocken tupfen. 1 TL Salz in das Hähnchen geben und von außen gut mit Salz und Pfeffer einreiben.
+    
+                Margarine in einem Topf schmelzen, bis es schäumt, dann Paprikapulver dazugeben und umrühren. Das Hähnchen in einen Bräter (oder große Auflaufform) geben und mit der Paprikamarinade einpinseln. Bei 200 - 180 Grad ca. 75 min. im Backofen braten. Hähnchen einmal wenden und öfters mal einpinseln.
+                
+                Tipp: Wenn man es gerne etwas schärfer mag, ein wenig Chilipulver mit zu der Marinade geben.
+            </span>
+        </div>
+        <!-- Credits -->
+        <div class="credits">
+            <h2>Rezept erstellt von</h2>
+        </div>
+        <div class="creditsProfil">
+            <img src="../img/profile.png" alt="">
+            <span class="creditName">Russell</span>
+        </div>
+    </div>
+    
+    </div>
+    
+    <div w3-include-html="footer.html"></div>
+    
+</body>
+</html>
+
+
+
+

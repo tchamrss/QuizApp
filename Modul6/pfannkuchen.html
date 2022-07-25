@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .recept {
+            width: 100%;
+            text-align: left;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+            border-collapse:collapse;
+            
+            border: 2px solid#ddd;
+           
+
+        }
+        .recept td{
+            border: 1px solid blueviolet;
+            padding: 8px;
+        }
+
+         table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        table th{
+            padding-top: 12px;
+            padding-bottom: 12px;
+            background-color: #04AA6D;
+            color: black;
+        }
+
+        table tr:hover{
+            background-color: beige;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Rezept Pfannkuchen</h1>
+    <table class="recept" id="table">
+        
+        <tr>
+            <td>
+               <b>Menge</b>
+            </td>
+            <td>
+                <b>Name</b>
+            </td>
+        </tr>
+
+    </table>
+    <input  id="menge" min="0" placeholder="Menge eingeben...">
+    <input id="zutaten" placeholder="Name eingeben...">
+    <button onclick="addIngredient()">add ingredients</button>
+    <script>
+
+        function addIngredient(){
+            let menge =document.getElementById('menge').value;
+            let zutaten =document.getElementById('zutaten').value;
+            addTolist(menge,zutaten);
+        }
+
+        function addAll(){
+            addTolist('500g','Mehl' );
+            addTolist('100g','Zucker' );
+            addTolist('5','Eier' );
+        }
+
+        function addTolist(menge,zutaten) {
+            document.getElementById('table').innerHTML+=`
+            <tr>
+                <td>${menge}</td>
+                <td>${zutaten}</td>
+            <tr> 
+                        
+            `;
+            
+        }
+        addAll();
+
+    </script>
+
+   
+</body>
+</html>

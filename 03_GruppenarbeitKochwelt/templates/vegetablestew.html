@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemüseeintopf</title>
+    <link rel="icon" href="img/salad.jpg">
+    <link rel="stylesheet" href="vegetableStewStyle.css">
+    <link rel="stylesheet" href="templates/header.css">
+    <link rel="stylesheet" href="..//style_pascal.css">
+    <link rel="stylesheet" href="..//style.css">
+
+</head>
+
+<body onload="includeHTML()">
+    <!-- Headline -->
+    <div class="overflowX">
+        <!-- HeaderTemplate -->
+        <div w3-include-html="../templates/header.html"></div>
+        <!-- Top Body -->
+        <div class="bodyHeader">
+            <div class="bodyHeaderH1">
+                <h1><b>Gemüseeintopf</b></h1>
+            </div>
+            <div>
+                <img class="mainImageDesign" src="../img/Kartoffelsuppe.jpg" alt="">
+            </div>
+            <div class="infoHeader">
+                <div class="infoHeaderBorder ">
+                    <img class="clockDesign" src="../img/icons/clock-regular.svg" alt="">
+                    <span>60 Min</span>
+                </div>
+                <div class="infoHeaderBorder marginLeft">
+                    <img class="brainDesign" src="../img/icons/brain-solid.svg" alt="">
+                    <span>simpel</span>
+                </div>
+                <div class="infoHeaderBorder marginLeft">
+                    <img class="calendarDesign" src="../img/icons/calendar-alt-regular.svg" alt="">
+                    <span>18.07.2022</span>
+                </div>
+            </div>
+            <!-- Bottom Body -->
+            <div class="inputLine">
+                <span>Zutaten für</span>
+                <input type="number" placeholder="1" id="inputField" min="1">
+                <button onclick="generate()">Portionen</button>
+            </div>
+            <!-- FootTable -->
+            <div class="footTable">
+                <div class="footTableDesignOne">
+                    <span id="suppengrün">600g Suppengrün</span>
+                </div>
+                <div class="footTableDesignTwo">
+                    <span id="tomaten">1 Tomate</span>
+                </div>
+                <div class="footTableDesignOne">
+                    <span id="zwiebeln">2 Zwiebeln</span>
+                </div>
+                <div class="footTableDesignTwo">
+                    <span id="möhren">500g Möhren</span>
+                </div>
+                <div class="footTableDesignOne">
+                    <span id="lorbeerblätter">2 Lorbeerblätter</span>
+                </div>
+                <div class="footTableDesignTwo">
+                    <span id="kartoffeln">600g festkochende Kartoffeln</span>
+                </div>
+                <div class="footTableDesignOne">
+                    <span>Salz und Pfeffer</span>
+                </div>
+                <div class="footTableDesignTwo">
+                    <span id="porree">450g Porree</span>
+                </div>
+                <div class="footTableDesignOne">
+                    <span id="erbsen">250g tiefgefrorene Erbsen</span>
+                </div>
+                <div class="footTableDesignTwo">
+                    <span> 4 Gewürznelken</span>
+                </div>
+                <div class="footTableDesignOne">
+                    <span> Petersilie</span>
+                </div>
+            </div>
+            <!-- Preparation -->
+            <div class="preparationDesign">
+                <h1>Zubereitung</h1>
+            </div>
+            <div class="preparationTime">
+                <div class="preparationBorder">
+                    <img class="clockDesign" src="../img/icons/clock-regular.svg" alt="">
+                    <span>ca. 60 Minuten</span>
+                </div>
+                <div class="preparationBorder marginLeft">
+                    <img class="clockDesign" src="../img/icons/clock-regular.svg" alt="">
+                    <span>Gesamtzeit ca. 60 Minuten</span>
+                </div>
+            </div>
+            <div class="preparationText">
+                <span>
+                    Suppengrün putzen, waschen und in grobe Stücke schneiden. Tomate waschen und halbieren. Petersilienblätter abzupfen, Stiele beiseite legen. Zwiebeln waschen und halbieren. Zwiebeln ohne Fett, mit den Schnittflächen nach unten, in einem großen Topf rösten. 
+                    2 l Wasser angießen, Suppengrün, Petersilienstiele, Tomate, Lorbeerblätter, 1 TL Salz, Pfefferkörner und Gewürznelken zugeben. Aufkochen und zugedeckt ca. 30 Minuten köcheln lassen.
+                    Kartoffeln schälen, waschen und würfeln. Möhren waschen, schälen und in Scheiben schneiden. Porree putzen, waschen und in Ringe schneiden. Petersilie hacken. Gemüsebrühe durch ein Sieb gießen und in einen großen Topf geben. 
+                    Brühe erneut aufkochen. Kartoffel, Möhren und Porree zufügen und zugedeckt ca. 15 Minuten garen. Ca. 3 Minuten vor Ende der Garzeit, tiefgefrorene Erbsen zufügen und mitköcheln. Petersilie, bis auf etwas zum Bestreuen in die Suppe geben und mit Salz und Pfeffer abschmecken. Mit übriger Petersilie bestreuen. 
+                </span>
+            </div>
+            <!-- Credits -->
+            <div class="credits">
+                <h2>Rezept erstellt von</h2>
+            </div>
+            <div class="creditsProfil">
+                <img src="../img/profile.png" alt="">
+                <span class="creditName">Alex</span>
+            </div>
+        </div>
+    </div>
+    <div w3-include-html="footer.html"></div>
+    <script src="../takeHTML.js"></script>
+    <script src="../header.js"></script>
+    <script src="../vegetableStew.js"></script>
+</body>
+
+</html>
