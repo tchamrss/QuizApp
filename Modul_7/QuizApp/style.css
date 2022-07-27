@@ -57,3 +57,20 @@ body{
     margin-top: 24px;
 
 }
+
+@media(max-width:525px){
+    
+    body{
+        background-color: white !important;
+        margin: 0% !important;
+    }
+
+    .container{
+        --bs-gutter-x: 0 !important;
+
+    }
+
+    .container-fluid{
+    justify-content: center !important;
+    }
+}
