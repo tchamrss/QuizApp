@@ -1,56 +1,56 @@
 let questions = [
     {
-        "question": "wer hat HTML erfunden?",
-        "answer_1":"Robbie Williams",
-        "answer_2":"Lady Gaga",
-        "answer_3":"Tim Berners-Lee",
-        "answer_4":" Justin Bieber",
+        "question": "wann hat der 2. Weltkrieg angefangen?",
+        "answer_1":"1. Oktober 1938",
+        "answer_2":"1. September 1938",
+        "answer_3":"1. September 1939",
+        "answer_4":" 1. Oktober 1939",
         "right_answer": 3
     },
 
     {
-        "question": "wann begann der erste Weltkrieg?",
-        "answer_1":"Robbie Williams",
-        "answer_2":"Lady Gaga",
-        "answer_3":"Tim Berners-Lee",
-        "answer_4":" Justin Bieber",
+        "question": "Wie heißt der kleinste Staat der Welt? ",
+        "answer_1":"Monaco",
+        "answer_2":"Vatikanstadt",
+        "answer_3":"Malta",
+        "answer_4":" Luxemburg",
+        "right_answer": 2
+    },
+
+    {
+        "question": "wie heißt die Hauptstadt von Kroatien?",
+        "answer_1":"Paris",
+        "answer_2":"Zagreb",
+        "answer_3":"Prag",
+        "answer_4":"Bratislava",
+        "right_answer": 2
+    },
+
+    {
+        "question": "wie viele Zähne hat ein erwachsener Mensch normalerweise?",
+        "answer_1":"26",
+        "answer_2":"36",
+        "answer_3":"30",
+        "answer_4":" 32",
+        "right_answer": 4
+    },
+
+    {
+        "question": "In Welchem Meer liegt die Insel Hawaii?",
+        "answer_1":"Atlantischer Ozean ",
+        "answer_2":"Indischer Ozean",
+        "answer_3":"Pazifischer Ozean",
+        "answer_4":" Karabisches Meer",
         "right_answer": 3
     },
 
     {
-        "question": "wer hat HTML erfunden?",
-        "answer_1":"Robbie Williams",
-        "answer_2":"Lady Gaga",
-        "answer_3":"Tim Berners-Lee",
-        "answer_4":" Justin Bieber",
-        "right_answer": 3
-    },
-
-    {
-        "question": "wer hat HTML erfunden?",
-        "answer_1":"Robbie Williams",
-        "answer_2":"Lady Gaga",
-        "answer_3":"Tim Berners-Lee",
-        "answer_4":" Justin Bieber",
-        "right_answer": 3
-    },
-
-    {
-        "question": "wer hat HTML erfunden?",
-        "answer_1":"Robbie Williams",
-        "answer_2":"Lady Gaga",
-        "answer_3":"Tim Berners-Lee",
-        "answer_4":" Justin Bieber",
-        "right_answer": 3
-    },
-
-    {
-        "question": "wer hat HTML erfunden?",
-        "answer_1":"Robbie Williams",
-        "answer_2":"Lady Gaga",
-        "answer_3":"Tim Berners-Lee",
-        "answer_4":" Justin Bieber",
-        "right_answer": 3
+        "question": "An welchem Datum fiel die Berliner Mauer?",
+        "answer_1":"8. Oktober 1989",
+        "answer_2":"3. Oktober 1990",
+        "answer_3":"2. November 1990",
+        "answer_4":" 9. November 1989",
+        "right_answer": 4
     }
 
 
