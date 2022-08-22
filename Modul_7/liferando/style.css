@@ -1,7 +1,285 @@
-.header{
-    background-color: orange;
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important; 
+    margin: 0% !important;
+}
+
+.card-body3 img{
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+
+}
+
+.card-body1 {
+    padding-left: 3px;
+
+}
+
+.container-all{
+    display: flex;
+}
+
+
+.container-left{
+    width: 65%;
+    height: 100%;
+}
+
+.navbar{
+    background-color: rgb(255, 201, 102); /* rgb(255, 176, 30); */
+
+}
+
+.container-right{
+    position: fixed;
+    width: 35%;
+    top: 60px;
+    right: 0;
+    
+    /* bottom: 158px; */
+    z-index: 0;
+    
+    transition: all 225ms ease-in-out;
+    padding-bottom: 16px;
+    
+}
+
+.scroll-class{
+    max-height: calc(100vh - 320px);
+    overflow-y: scroll;
+
+}
+
+
+.container-left img{
+    width: 100%;
+    object-fit: cover;
+    
+
+}
+
+.lachs-img{
+    height: 23vh;
+
+}
+
+.container-right h1{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 0px !important;
+
+}
+
+.d-none{
+    display: none;
+}
+
+.basket-btn{
+    display: none; 
+    align-items: center ;
+    justify-content: center;
+
+}
+
+.basket-btn-child{
+    width: 100%;
+
+}
+
+.zIndex{
+    z-index: -1;
+}
+
+
+.basket{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.basket span{
+   text-align: center;
+   padding-top:12px ;
+}
+
+.basket img{
+    width: 50%;
+    object-fit: cover;
+}
+
+.plus-minus{
+    padding: 2px;
+    width: 20px;
+}
+
+.plus-minus:hover{
+    cursor: pointer;
+}
+
+.full-basket{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.basketName{
+    width: 150px;
+}
+
+.full-basket-child{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.cancel-dish{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 80px;
+}
+
+.cancel-dish img{
+    width: 20px;
+    
+}
+
+.cancel-dish img:hover{
+    cursor: pointer;
+    
+}
+.checkout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.checkout-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 8px;
+}
+
+.checkout-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 8px;
+}
+
+
+.restaurant-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+}
+
+.star-img img{
+    width: 24px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+/* .info img{
+    width: 24px !important;
+    
+} */
+
+.offer{
+    padding-left: 24px;
+    padding-top: 24px;
+    padding-right: 24px;
+}
+
+.modal-header{
+    background-color: orange;
+}
+
+#warenborb{
+    font-size: larger;
+}
+
+.dishes{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3px;
+    padding-top: 16px;
+    margin-bottom: 3px;
+    justify-content: space-between;
 
 }
+
+.dishes:hover{
+    background-color: rgb(246, 246, 242);
+}
+
+.dishes img{
+    width: 24px;
+    
+}
+
+.dish-price{
+    color:  rgb(255, 176, 30);
+    font-size: large;
+
+}
+
+.add-dishes:hover{
+    cursor: pointer;
+
+}
+@media(max-width:650px){
+    .basket-btn{
+        display: flex;
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        
+    }
+
+    .dishes{
+        
+        flex-direction: column;
+    }
+
+    .container-all{
+        flex-direction: column;
+        
+    }
+
+    .container-right{
+        display: none;
+        padding-top: 12px;
+        width: 100%;
+        position: relative;
+        
+    }
+
+    .container-left{
+        
+        width: 100%;
+    }
+/* 
+    .header {
+        
+        flex-direction: column;
+       
+    } */
+
+}
+
+

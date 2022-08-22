@@ -1,0 +1,142 @@
+
+.header{
+    padding: 4px;
+    background-color: orange; /* rgb(255, 176, 30); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-size:18px;
+    
+}
+
+.header-logo img{
+    width: 71px;
+    height: 68px;
+    object-fit: cover;
+    padding-right: 6px;
+}
+
+.header-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body3 img{
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+
+}
+
+
+.header a {
+    padding: 0 16px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 4px solid transparent;
+    transition: all 225ms ease-in-out;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header a:hover {
+    color: white;
+    border-bottom: 4px solid white;
+    transition: all 225ms ease-in-out;
+}
+
+.header-logo a:hover{
+    border-bottom:  4px solid transparent !important;
+}
+
+
+.transform {
+    transform: translateY(0px) !important;
+    transition: all 225ms ease-in-out;
+}
+
+.nav-bar{
+    display: flex;
+}
+
+#menuResponsive,
+#xMarkDesign {
+    display: none;
+}
+
+#menuResponsive {
+    width: 30px;
+    cursor: pointer;
+}
+
+#xMarkDesign {
+    position: absolute;
+    right: 5%;
+    top: 15px;
+    width: 20px;
+    cursor: pointer;
+}
+
+
+
+@media (min-width: 0px) and (max-width: 650px) {
+
+    .header-logo img{
+        width: 50px;
+        height: 40px;
+        object-fit: cover;
+        padding-right: 6px;
+    }
+
+    .header-logo span{
+        font-size: 16px;
+    }
+   
+    #menuResponsive {
+        width: 20px;
+        cursor: pointer;
+    }
+
+    #menuResponsive,
+    #xMarkDesign {
+        display: flex;
+    }
+
+    #navMenu {
+        display: none;
+    }
+
+    #xMarkDesign {
+        top: 5px;
+    }
+
+    #navMenu {
+        padding: 26px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        transform: translateY(-250px);
+        transition: all 225ms ease-in-out;
+        background-color: orange;
+        width: 100%;
+        height: 90px;
+    }
+
+}
+
+@media  (max-width: 300px) {
+
+    .header a {
+        font-size: 10px;
+        flex-direction: column !important;
+        
+    }
+
+
+}
