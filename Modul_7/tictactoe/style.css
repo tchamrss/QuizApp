@@ -5,6 +5,7 @@ body{
     align-items: center;
     flex-direction: column;
     /* height: 100vh; */
+    overflow-x: hidden;
 }
 
 .player-panel{
@@ -67,6 +68,15 @@ body{
 }
 
 .game-over{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+    animation: zoomIn 225ms ease-in-out;
+}
+
+.game-draw{
     position: absolute;
     left: 0;
     right: 0;
@@ -156,3 +166,37 @@ tr td:last-child {
     display: none;
 }
 
+@media(max-width:445px){
+
+    
+
+    .player-panel {
+        
+        flex-direction: column;
+    }
+
+    .restart-btn {
+      
+        width: 150px;
+        height: 75px;
+        font-size: 20px;
+       
+    }
+
+    .body-content{
+        padding-top: 24px;
+        overflow-x: hidden;
+        /* width: 200px;
+        height: 500px; */
+
+    }
+
+    .shape {
+        width: 40px;
+        height: 40px;
+        top: 39px;
+        left: 13px;
+        
+    }
+
+}
