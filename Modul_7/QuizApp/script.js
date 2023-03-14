@@ -1,6 +1,6 @@
 let questions = [
     {
-        "question": "wann hat der 2. Weltkrieg angefangen?",
+        "question": "Wann hat der 2. Weltkrieg angefangen?",
         "answer_1":"1. Oktober 1938",
         "answer_2":"1. September 1938",
         "answer_3":"1. September 1939",
@@ -55,7 +55,7 @@ let questions = [
 
 
 ];
-
+let themes =['Allgemeines Wissen','Geschichte','Erdkunde','Technik']
 let currentQuestion = 0;
 let rightQuestions = 0;
 let AUDIO_SUCCESS = new Audio('sound/success.mp3');
@@ -101,6 +101,42 @@ function answer(selection){
 
 }
 
+function theme(selection){
+    let selectedThemeNumber = selection.slice(-1);
+    /* let idOfthemeSelected = `theme_${selectedThemeNumber}`; */
+    if(selectedThemeNumber == 1){
+        /* document.getElementById(selection).parentNode.classList.add('bg-success') */
+        document.getElementById('themescreen').style = 'display: none';
+        document.getElementById('question-screen').style = '';
+        init();
+
+    }
+
+    if(selectedThemeNumber == 2){
+        document.getElementById(selection).parentNode.classList.add('bg-success') ;
+        alert('Nur "Allgemeines Wissen funktioniert"');
+        document.getElementById(selection).parentNode.classList.remove('bg-success') ;
+        location.reload();
+
+    }
+
+    if(selectedThemeNumber == 3){
+        document.getElementById(selection).parentNode.classList.add('bg-success') ;
+        alert('Nur "Allgemeines Wissen funktioniert"');
+        document.getElementById(selection).parentNode.classList.remove('bg-success') 
+        location.reload();
+
+    }
+
+    if(selectedThemeNumber == 4){
+        document.getElementById(selection).parentNode.classList.add('bg-success') 
+        alert('Nur "Allgemeines Wissen funktioniert"')
+        /* document.getElementById(selection).parentNode.classList.remove('bg-success')  */
+        location.reload();
+
+    }
+
+}
 
 function nextQuestion(){
     currentQuestion++;
@@ -129,7 +165,8 @@ function resetAnswerButton(){
 function newStart(){
     document.getElementById('header-img').src = 'img/mind-g384b93894_640.png';
     document.getElementById('endscreen').style = 'display: none';
-    document.getElementById('questionBody').style = '';
+    document.getElementById('question-screen').style = 'display: none';
+    document.getElementById('themescreen').style = '';
     rightQuestions = 0;
     currentQuestion = 0;
     init();
@@ -138,6 +175,7 @@ function newStart(){
 
 function showEndscreen(){
     
+    updateProgressBar();
     document.getElementById('endscreen').style='';
     document.getElementById('questionBody').style = 'display: none';
     document.getElementById('amount-questions').innerHTML = questions.length;
@@ -158,7 +196,7 @@ function updateTonextQuestion(){
 
 function updateProgressBar(){
 
-    let percent = (currentQuestion +1) / questions.length;
+    let percent = (currentQuestion) / questions.length;
     percent = Math.round(percent *100) ;
     document.getElementById('progress-bar').innerHTML = `${percent} %`
     document.getElementById('progress-bar').style = `width: ${percent}%;`;

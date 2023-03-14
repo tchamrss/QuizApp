@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Griechischer Bauernsalat</title>
+    <link rel="icon" href="img/salad.jpg">
+    <link rel="stylesheet" href="css/saladStyle.css">
+    <link rel="stylesheet" href="templates/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body onload="includeHTML()">
+    <!-- Headline -->
+    <div class="overflowX">
+        <!-- HeaderTemplate -->
+        <div w3-include-html="templates/header.html"></div>
+        <!-- Top Body -->
+        <div>
+            <div class="bodyHeader">
+                <div class="bodyHeaderH1">
+                    <h1><b>Griechischer Bauernsalat</b></h1>
+                </div>
+                <div>
+                    <img class="mainImageDesign" src="img/salad.jpg" alt="">
+                </div>
+                <div class="infoHeader">
+                    <div class="infoHeaderBorder ">
+                        <img class="clockDesign" src="img/icons/clock-regular.svg" alt="">
+                        <span>15 Min</span>
+                    </div>
+                    <div class="infoHeaderBorder marginLeft">
+                        <img class="brainDesign" src="img/icons/brain-solid.svg" alt="">
+                        <span>simpel</span>
+                    </div>
+                    <div class="infoHeaderBorder marginLeft">
+                        <img class="calendarDesign" src="img/icons/calendar-alt-regular.svg" alt="">
+                        <span>16.07.2022</span>
+                    </div>
+                </div>
+                <!-- Bottom Body -->
+                <div class="inputLine">
+                    <span>Zutaten für</span>
+                    <input class="input-design" onchange="generate()" type="number" placeholder="1" id="inputField" min="1">
+                    <button onclick="generate()">Portionen</button>
+                </div>
+                <!-- FootTable -->
+                <div class="footTable">
+                    <div class="footTableDesignOne">
+                        <span id="salatGurke">0.25 Salatgurke</span>
+                    </div>
+                    <div class="footTableDesignTwo">
+                        <span id="paprikaschote">0.5 Paprika, rot und grün</span>
+                    </div>
+                    <div class="footTableDesignOne">
+                        <span id="tomaten">125 g Tomaten</span>
+                    </div>
+                    <div class="footTableDesignTwo">
+                        <span id="zwiebeln">0.5 Zwiebeln</span>
+                    </div>
+                    <div class="footTableDesignOne">
+                        <span id="schafskaese">50 g Schafskäse</span>
+                    </div>
+                    <div class="footTableDesignTwo">
+                        <span id="oliven">5 Oliven aus dem Glas</span>
+                    </div>
+                    <div class="footTableDesignOne">
+                        <span>Salz und Pfeffer</span>
+                    </div>
+                    <div class="footTableDesignTwo">
+                        <span id="zitrone">0.25 Zitrone</span>
+                    </div>
+                    <div class="footTableDesignOne">
+                        <span id="olivenoel">1 EL Olivenöl</span>
+                    </div>
+                    <div class="footTableDesignTwo">
+                        <span> Oregano</span>
+                    </div>
+                </div>
+                <!-- Preparation -->
+                <div class="preparationDesign">
+                    <h1>Zubereitung</h1>
+                </div>
+                <div class="preparationTime">
+                    <div class="preparationBorder">
+                        <img class="clockDesign" src="img/icons/clock-regular.svg" alt="">
+                        <span>ca. 15 Minuten</span>
+                    </div>
+                    <div class="preparationBorder marginLeft">
+                        <img class="clockDesign" src="img/icons/clock-regular.svg" alt="">
+                        <span>Gesamtzeit ca. 15 Minuten</span>
+                    </div>
+                </div>
+                <div class="preparationText">
+                    <span>Gurke waschen und ungeschält in dünne Scheiben oder Stücke schneiden. Paprika waschen,
+                        entkernen
+                        und
+                        in dünne Streifen schneiden.
+                        Tomaten waschen und achteln. Zwiebeln schälen und in feine Ringe schneiden. Schafskäse würfeln
+                        und
+                        mit
+                        Oregano bestreuen.
+                        Oliven abgießen und mit Gurke, Paprika, Tomaten, Zwiebeln und Schafskäse in eine Schüssel geben.
+                        Olivenöl, Zitronensaft,
+                        Salz und Pfeffer zu einer Sauce verrühren und über den Salat gießen. Umrühren. Guten Appetit!
+                    </span>
+                </div>
+                <!-- Credits -->
+                <div class="credits">
+                    <h2>Rezept erstellt von</h2>
+                </div>
+                <div class="creditsProfil">
+                    <img src="img/profile.png" alt="">
+                    <span class="creditName">Pascal</span>
+                </div>
+            </div>
+        </div>
+        <div w3-include-html="footer.html"></div>
+        <script src="templates/takeHTML.js"></script>
+        <script src="templates/header.js"></script>
+        <script src="scripts/salad.js"></script>
+</body>
+
+</html>

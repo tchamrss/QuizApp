@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        async function init() {
+            await includeHTML();
+            document.getElementById('headline').innerHTML = 'Herzlich willkommen!';
+        }
+
+        async function includeHTML() {
+            let includeElements = document.querySelectorAll('[w3-include-html]');
+            for (let i = 0; i < includeElements.length; i++) {
+                const element = includeElements[i];
+                file = element.getAttribute("w3-include-html"); // "includes/header.html"
+                let resp = await fetch(file);
+                if (resp.ok) {
+                    element.innerHTML = await resp.text();
+                } else {
+                    element.innerHTML = 'Page not found';
+                }
+            }
+        }
+    </script>
+</head>
+<body onload="init()">
+    <div w3-include-html="header.html"></div>
+</body>
+</html>

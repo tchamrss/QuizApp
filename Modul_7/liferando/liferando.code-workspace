@@ -1,0 +1,34 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../lieferando1"
+		},
+		{
+			"path": "../CRUD"
+		},
+		{
+			"path": "../../Projekt_4_Kochwelt"
+		},
+		{
+			"path": "../QuizApp"
+		},
+		{
+			"path": "../tictactoe"
+		},
+		{
+			"path": "../../Modul9_API"
+		},
+		{
+			"path": "../../Modul6"
+		},
+		{
+			"path": "../Fotogallerie"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "liferando"
+	}
+}

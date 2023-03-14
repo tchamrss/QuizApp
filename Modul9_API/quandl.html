@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        const API_KEY = 'nzVJPXCCz6rzj7dW4hSi';
+        let today = new Date();
+        today.setDate(new Date().getDate() -1);
+        let startDate = today.toISOString().split('T')[0];
+        let endDate = today.toISOString().split('T')[0];
+
+        async function loadCourse(){
+            /* let url =`https://data.nasdaq.com/api/v3/datasets/BITFINEX/LUNAF0USTF0?start_date=${startDate}&end_date=${endDate}&api_key=${API_KEY}`; */
+            let url =`https://data.nasdaq.com/api/v3/datasets/BITFINEX/LUNAF0USTF0?start_date=2022-05-22&end_date=2022-05-22&api_key=${API_KEY}`;
+            let response = await fetch(url);
+            let responseAsJson = await response.json();
+            
+            console.log('API answers',responseAsJson);
+            showBitcoinToday(responseAsJson);
+
+        }
+
+        function showBitcoinToday(responseAsJson){
+            let bitcoinToday = responseAsJson['dataset']['data'][0][3];
+            document.getElementById('bitcoinCurrent').innerHTML =bitcoinToday;
+
+        }
+    </script>
+</head>
+<body onload="loadCourse()">
+    <h1>Was kostet ein Bitcoin aktuell</h1>
+
+    <div>aktuell kostet ein Bitcoin <b id="bitcoinCurrent">60.000</b> USD</div>
+</body>
+</html>
+
+<!-- 
+// 1. Möglichkeit
+function init() {
+    fetch('bundesland.json').then(() => {
+        console.log('Fertig');
+    }, () => {
+        console.log('Fehler aufgetreten');
+    });
+}
+
+
+// 2. Möglichkeit
+async function init() {
+    try {
+        await fetch('bundesland.json');
+        console.log('Fertig');
+    } catch (e) {
+        console.log('Fehler aufgetreten');
+    }
+}
+
+
+// 3. Möglichkeit
+async function init() {
+    await fetch('bundesland.json').catch(errorFunction);
+    console.log('Fertig');
+}
+
+function errorFunction() {
+    console.log('Fehler aufgetreten');
+}
+
+
+// 4. Möglichkeit
+async function init() {
+    let [resp, err] = await resolve(fetch('bundesland.json'));
+    if (resp) {
+        console.log('Fertig');
+    } 
+    
+    if(err){
+        console.error('Fehler');
+    }
+}
+
+async function resovle(p) {
+    try {
+        let response = await p;
+        return [response, null];
+    } catch (e) {
+        return [null, e];
+    }
+} -->

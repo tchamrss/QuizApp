@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kontakt</title>
+	<link rel="icon" href="img/profile.png">
+	<link rel="stylesheet" href="css/saladStyle.css">
+	<link rel="stylesheet" href="templates/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/kontaktformular.css">
+	<link rel="stylesheet" href="css/fonts.css">
+
+</head>
+
+<body onload="includeHTML()">
+
+	<div w3-include-html="templates/header.html"></div>
+
+	<div class="main_div">
+
+		<h1>In Kontakt treten!</h1>
+
+		<form class="form" action="https://gruppe-280.developerakademie.net/Projekt_4_Kochwelt/send_mail.php"
+			method="POST">
+			<label>Vorname und Nachname:</label>
+			<input name="name" class="input_field_name" id="name" required type="text" placeholder="Namen eingeben.."
+				minlength="3">
+			<label>Nachricht:</label>
+			<textarea name="message" class="textarea_message" id="message" required type="text"
+				placeholder="Nachricht eingeben.."></textarea>
+			<button type="submit" class="button_one">Absenden!</button>
+		</form>
+	</div>
+	<div class="footer">
+		<a href="datenschutz.html" target="_self">Datenschutz</a>|<a href="impressum.html" target="_self">Impressum</a>
+	</div>
+
+	<script src="templates/takeHTML.js"></script>
+	<script src="templates/header.js"></script>
+</body>
+
+
+
+</html>
